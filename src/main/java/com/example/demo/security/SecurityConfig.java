@@ -33,8 +33,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 		auth
 			.inMemoryAuthentication()
-			.withUser("user")
-			.password(passwordEncoder().encode("password"))
+			.withUser(System.getenv("DELIVERABLE_USER"))
+			.password(passwordEncoder().encode(System.getenv("DELIVERABLE_PASS")))
 			.authorities("ROLE_USER");
 		
 	}
