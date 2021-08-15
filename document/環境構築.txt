@@ -1,0 +1,55 @@
+環境構築　VScode で　spring(java)を起動
+
+●環境変数の設定
+VSコードでターミナルを開く（Macのターミナルじゃない）
+
+cd
+ホームディレクトリに移動
+
+vim .zshrc
+隠しファイルの.zshrcを編集する
+
+i押す
+インサートモードに入る（下にINSERTと出る）
+
+export DELIVERABLE_USER=user
+export DELIVERABLE_PASS=pass
+
+の２行を最終行に追加
+user、passは好きに変えて良い
+
+escキー押す
+
+:wq 入力してエンター
+vimから画面が戻る
+
+source ~/.zshrc　を実行
+
+echo $DELIVERABLE_USER を実行
+“user”と表示されれば成功、次へ進む
+
+
+
+●VScodeでの環境構築
+
+command shift x　で検索
+
+Java Extension Pack
+Spring Boot Extension Pack
+Lombok Annotations Support for VS Code
+
+をインストール
+
+
+左のタブのファイルからdeliverable-noteのフォルダを開く
+
+左の一番下にSpringDASHBOADみたいな欄があるからそこの再生ボタンクリック
+
+コンソールにSpringBootと表示される
+
+真っ赤なエラーがなければ
+http://localhost:8080/login
+
+にアクセス
+
+表示されたら環境構築終了！
