@@ -14,7 +14,7 @@ import com.example.demo.entity.SampleValue;
 @Controller
 public class SampleController {
 	
-	@GetMapping("/index")
+	@GetMapping("/")
 	public String showList(Authentication loginUser, Model model) {
 		
 		model.addAttribute("userName", loginUser.getName());
