@@ -6,5 +6,10 @@
 </head>
 <body>
 <h1 th:text="${samplevalue}">default</h1>
+
+
+<form th:action="@{/logout}" method="post">
+<button>ログアウトする</button>
+</form>
 </body>
 </html>

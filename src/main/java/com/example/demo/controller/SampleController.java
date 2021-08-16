@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,18 +14,27 @@ import com.example.demo.entity.SampleValue;
 @Controller
 public class SampleController {
 	
-	@GetMapping("/")
-	public String test(Model model) {
+	@GetMapping("/index")
+	public String showList(Authentication loginUser, Model model) {
 		
+		model.addAttribute("userName", loginUser.getName());
+		model.addAttribute("role", loginUser.getAuthorities());
 		model.addAttribute("samplevalue", "Hello World");
-		return "sampleindex";
+		return "index";
 	}
 	
 	@PostMapping("/test")
 	public String testPost(@Validated 
 			@ModelAttribute("samplevalue") SampleValue samplevalue,
 			BindingResult result) {
-		return "sampleindex";
+		return "index";
 	}
+	
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+	
+	
 
 }
