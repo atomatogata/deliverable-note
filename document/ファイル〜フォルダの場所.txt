@@ -1,0 +1,7 @@
+ファイルは以下のフォルダに配置してください
+
+→css/js/img
+/deliverable-note/src/main/resources/static
+
+→HTML
+templates/
