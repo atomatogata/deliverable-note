@@ -1,0 +1,36 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  font-size: 20px;
+  margin-top: 600px;
+  color: #3d3939;
+  top: 200px;
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  -webkit-transform: skew(180deg);
+          transform: skew(180deg);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  -webkit-animation: ease-in;
+          animation: ease-in;
+  background-color: #2ada13;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  border-radius: 10px;
+  -webkit-transform: translate(-5.5px, -5.5px);
+          transform: translate(-5.5px, -5.5px);
+  background-color: #28dbd2;
+  -webkit-box-shadow: 5px 5px 0 0 black;
+  box-shadow: 10px 10px 15px black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
