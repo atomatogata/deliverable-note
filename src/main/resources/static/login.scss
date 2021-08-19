@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  font-size: 20px;
+  margin-top: 600px;
+  color: rgb(61, 57, 57);
+  top: 200px;
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  transform: skew(180deg);
+  transition: all 3s;
+  animation: ease-in;
+  background-color: rgb(42, 218, 19);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    border-radius: 10px;
+    transform: translate(-5.5px, -5.5px);
+    background-color: rgb(40, 219, 210);
+    -webkit-box-shadow: 5px 5px 0 0 black;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    transition: all 1s;
+  }
+}
