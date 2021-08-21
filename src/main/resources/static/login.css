@@ -14,8 +14,8 @@
   margin: 0 auto;
   -webkit-transform: skew(180deg);
           transform: skew(180deg);
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  -webkit-transition: all 5s;
+  transition: all 5s;
   -webkit-animation: ease-in;
           animation: ease-in;
   background-color: #2ada13;
