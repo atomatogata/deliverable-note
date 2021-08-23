@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -19,14 +18,13 @@
   border: none;
   cursor: pointer;
 
-}
-
-.btn:hover {
-  color: white;
-  border-radius: 10px;
-  transform: translate(-5.5px, -5.5px);
-  background-color: rgb(40, 219, 210);
-  -webkit-box-shadow: 5px 5px 0 0 black;
-  box-shadow: 10px 10px 15px rgb(0, 0, 0);
-  transition: all 1s;
+  .btn:hover {
+    color: white;
+    border-radius: 10px;
+    transform: translate(-5.5px, -5.5px);
+    background-color: rgb(40, 219, 210);
+    -webkit-box-shadow: 5px 5px 0 0 black;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    transition: all 11s;
+  }
 }
